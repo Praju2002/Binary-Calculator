@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Binary Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <h2>Advanced Binary Calculator</h2>
+
+      <input
+        type="text"
+        id="binaryInput1"
+        placeholder="Enter first binary number"
+      />
+      <input
+        type="text"
+        id="binaryInput2"
+        placeholder="Enter second binary number"
+      />
+
+      <div class="buttons">
+        <button onclick="calculate('add')">+</button>
+        <button onclick="calculate('subtract')">-</button>
+        <button onclick="calculate('multiply')">*</button>
+        <button onclick="calculate('divide')">/</button>
+        <button onclick="calculate('and')">AND</button>
+        <button onclick="calculate('or')">OR</button>
+        <button onclick="calculate('xor')">XOR</button>
+        <button onclick="calculate('not')">NOT</button>
+        <button onclick="calculate('leftShift')"><<</button>
+        <button onclick="calculate('rightShift')">>></button>
+      </div>
+
+      <div id="result">Result: 0</div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
